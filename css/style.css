@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+*{
+    font-family: 'Borel', cursive;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container {
+    background-color: rgb(224, 83, 83);
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+header img {
+    width: 70px;
+    border-radius: 50%;
+}
+.menu  {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+@media (max-width:767px){
+    .menu {
+       width: 30%;
+       gap: 10px;
+    }
+    header {
+        width: 100%;
+        padding: 0px;
+    }
+}
+ul li a {
+    text-decoration: none;
+    color: azure;
+    transition: 0.5s;
+}
+a:hover {
+    transform: scale(1.2);
+    color: cadetblue;
+    
+
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+.content .text{
+    width: 40%;
+
+}
+@media (max-width:590px){
+    .content .text {
+        width: 75%;
+    }
+}
+.content .text h2 {
+    font-weight: 700;
+    font-size: 20px;
+}
+.content .text p{
+    margin-bottom: 12px;
+}
+.content .text a {
+    text-decoration: none;
+    color: black;
+    background-color: whitesmoke;
+    padding: 8px 15px;
+    border-radius: 12px;
+    text-align: center;
+    width: 20px;
+
+}
+.images {
+    width: 30%;
+}
+.images img {
+    width: 232px;
+    height: 231px;
+    border-radius: 30px
+}
+@media (max-width:590px){
+    .images img {
+        width: 113px;
+        height: 154px;
+    }
+}
+.icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+@media (max-width:590px){
+    .icons {
+        width: 60%;
+    }
+}
+.icons img {
+    width: 50px;
+    /* padding: 3px; */
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.img:hover {
+    transform: scale(1.5)
+}
